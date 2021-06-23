@@ -2,57 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-<!-- ################################## -->
-<!--       Set up FireBase Stuff        -->
-<!-- ################################## -->
-
-<!-- Allow remote storage on Google Firebase -->
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script> <!-- #FIREBASE -->
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script> <!-- #FIREBASE -->
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script> <!-- #FIREBASE -->
-
-<!-- enter some javascript code-->
-<script type="text/javascript">
-// Firebase set up
-
- // Your web app's Firebase configuration (given to us by firebase)
-  var firebaseConfig = {
-    apiKey: "AIzaSyAlf82sX5Qi8rC5uqLZvk7YqdiVuvEfA60",
-    authDomain: "labjs-no-cue.firebaseapp.com",
-    databaseURL: "https://labjs-no-cue-default-rtdb.firebaseio.com",
-    projectId: "labjs-no-cue",
-    storageBucket: "labjs-no-cue.appspot.com",
-    messagingSenderId: "235368058400",
-    appId: "1:235368058400:web:e51cc4eb694daa63a63645"}; // #FIREBASE 
-  
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig); // #FIREBASE
-  
-  // Get a reference to the database service
-  var database = firebase.database(); // #FIREBASE
-  
-  // login anonymous user
-  firebase.auth().signInAnonymously().catch(function(error) { // #FIREBASE
-  // Handle Errors here.
-  var errorCode = error.code; // #FIREBASE
-  var errorMessage = error.message; // #FIREBASE
-  // ...
-}); // #FIREBASE
-  
-  // check if user can sign on to firebase 
-  firebase.auth().onAuthStateChanged(function(user) { // #FIREBASE
-  if (user) { // #FIREBASE
-    // User is signed in.
-    var isAnonymous = user.isAnonymous; // #FIREBASE
-    var uid = user.uid; // #FIREBASE
-    // ...
-  } else {
-    // User is signed out.
-    // ...
-  }
-  // ...
-});
-</script>
   <title>Experiment</title>
   <!-- viewport setup -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
