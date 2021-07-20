@@ -56,7 +56,10 @@ const study = lab.util.fromObject({
           "messageHandlers": {
             "before:prepare": function anonymous(
 ) {
-document.body.style.color = 'grey'
+document.body.style.color = 'black'
+
+document.body.style.backgroundColor = 'white'
+
 
 
 
@@ -76,7 +79,7 @@ document.body.style.color = 'grey'
             {
               "required": true,
               "type": "html",
-              "content": "\u003Cb\u003EProject Title: \u003C\u002Fb\u003E Predictive Eye Movements When Clicking On Targets\u003Cbr\u003E\u003Cbr\u003E\r\n\r\n\u003Cb\u003EStudent Researcher\u003C\u002Fb\u003E\u003Cbr\u003E\r\nCristina Weiner (weinerc@myumanitoba.ca)\u003Cbr\u003E\r\n\u003Cb\u003EJob Title:\u003C\u002Fb\u003E M.A. Student\u003Cbr\u003E\r\nDepartment of Psychology\u003Cbr\u003E\r\nUniversity of Manitoba\u003Cbr\u003E\r\nWinnipeg, Manitoba, R3T 2N2\u003Cbr\u003E\u003Cbr\u003E\r\n\r\n\u003Cb\u003ESupervisor\u003C\u002Fb\u003E\u003Cbr\u003E\r\nDr. Jonathan Marotta, Ph.D. (Jonathan.Marotta@umanitoba.ca)\u003Cbr\u003E\r\n\u003Cb\u003EJob Title:\u003C\u002Fb\u003E Professor\u003Cbr\u003E\r\nDepartment of Psychology\u003Cbr\u003E\r\nUniversity of Manitoba\u003Cbr\u003E\r\nWinnipeg, Manitoba, R3T 2N2\u003Cbr\u003E\u003Cbr\u003E\r\n\r\n\r\n\r\n\r\n",
+              "content": "\r\n\u003Cb\u003EStudent Researcher\u003C\u002Fb\u003E\u003Cbr\u003E\r\nRyan Langridge (langrirw@myumanitoba.ca)\u003Cbr\u003E\r\n\u003Cb\u003EJob Title:\u003C\u002Fb\u003E PhD Candidate\u003Cbr\u003E\r\nDepartment of Psychology\u003Cbr\u003E\r\nUniversity of Manitoba\u003Cbr\u003E\r\nWinnipeg, Manitoba, R3T 2N2\u003Cbr\u003E\u003Cbr\u003E\r\n\r\n\u003Cb\u003EStudent Researcher\u003C\u002Fb\u003E\u003Cbr\u003E\r\nBarbora Dušková (barbora.duskova@northumbria.ac.uk)\u003Cbr\u003E\r\n\u003Cb\u003EJob Title:\u003C\u002Fb\u003E MITACS Undergraduate Student Summer Intern\u003Cbr\u003E\r\nDepartment of Psychology\u003Cbr\u003E\r\nNorthumbria University\u003Cbr\u003E\r\nNewcastle-upon-Tyne, NE1 8ST (United Kingdom)\u003Cbr\u003E\u003Cbr\u003E\r\n\r\n\u003Cb\u003ESupervisor\u003C\u002Fb\u003E\u003Cbr\u003E\r\nDr. Jonathan Marotta, Ph.D. (Jonathan.Marotta@umanitoba.ca)\u003Cbr\u003E\r\n\u003Cb\u003EJob Title:\u003C\u002Fb\u003E Professor\u003Cbr\u003E\r\nDepartment of Psychology\u003Cbr\u003E\r\nUniversity of Manitoba\u003Cbr\u003E\r\nWinnipeg, Manitoba, R3T 2N2\u003Cbr\u003E\u003Cbr\u003E\r\n\r\n\r\n\r\n\r\n",
               "name": ""
             },
             {
@@ -200,7 +203,7 @@ document.body.style.color = 'grey'
             {
               "type": "text",
               "title": "Debriefing ",
-              "content": "In this study we were interested in where on the target object you clicked when it moved to the left or right of the screen, and the trajectory of your mouse movements. Through the examination and analysis of these mouse movements, we also sought to infer where you were looking when you made those mouse movements. Despite the co-occurrence of both vision and visuomotor processes, vision and motor functioning are typically studied independently, so their critical interactions are poorly understood. What is currently lacking in this area is a clear understanding of where people are looking while clicking on targets of varying complexity. Specifically, this study sought to expand current understandings of visual and visuomotor interactions by recording mouse movements and inferring the location of gaze made to visually presented targets. If you have any questions later on, please feel free to contact me – my contact information is listed below, or, you can contact the Human Ethics Coordinator at humanethics@umanitoba.ca. \n\nPlease press \"Esc\" to exit the experiment. \n\nCristina Weiner           \nDepartment of Psychology \nUniversity of Manitoba\nweinerc@myumanitoba.ca\n\nThank you again for participating.\n\nPlease press \"Esc\" to exit the experiment. \n\n\n"
+              "content": "In this study we were interested in where on the target object you clicked when it moved to the left or right of the screen, and the trajectory of your mouse movements. Through the examination and analysis of these mouse movements, we also sought to infer where you were looking when you made those mouse movements. Despite the co-occurrence of both vision and visuomotor processes, vision and motor functioning are typically studied independently, so their critical interactions are poorly understood. What is currently lacking in this area is a clear understanding of where people are looking while clicking on targets of varying complexity. Specifically, this study sought to expand current understandings of visual and visuomotor interactions by recording mouse movements and inferring the location of gaze made to visually presented targets. If you have any questions later on, please feel free to contact me – my contact information is listed below, or, you can contact the Human Ethics Coordinator at humanethics@umanitoba.ca. \n\nPlease press \"Esc\" to exit the experiment. \n\nRyan Langridge          \nDepartment of Psychology \nUniversity of Manitoba\nlangrirw@myumanitoba.ca\n\nThank you again for participating.\n\nPlease press \"Esc\" to exit the experiment. \n\n\n"
             }
           ],
           "scrollTop": true,
@@ -549,8 +552,9 @@ this.end()
           "messageHandlers": {
             "before:prepare": function anonymous(
 ) {
+this.options.viewport = [800, 600]
 this.options.viewportScale = 1
-this.options.devicePixelScaling = false
+
 }
           },
           "title": "Calibration Task Instructions"
@@ -561,22 +565,27 @@ this.options.devicePixelScaling = false
             {
               "Horizontal_Pos": "0",
               "Vertical_Pos": "0",
-              "": "Center"
+              "Cal_Dot": "Center"
             },
             {
               "Horizontal_Pos": "-300",
               "Vertical_Pos": "0",
-              "": "Left"
+              "Cal_Dot": "Left"
             },
             {
               "Horizontal_Pos": "0",
               "Vertical_Pos": "150",
-              "": "Up"
+              "Cal_Dot": "Up"
             },
             {
               "Horizontal_Pos": "0",
               "Vertical_Pos": "-150",
-              "": "Down"
+              "Cal_Dot": "Down"
+            },
+            {
+              "Horizontal_Pos": "300",
+              "Vertical_Pos": "0",
+              "Cal_Dot": "Right"
             }
           ],
           "sample": {
@@ -595,13 +604,7 @@ this.options.viewportScale = 1
 }
           },
           "title": "Screen Setup ",
-          "plugins": [
-            {
-              "type": "mousetrap",
-              "mode": "mousetrap",
-              "path": "global.MousetrapPlugin"
-            }
-          ],
+          "plugins": [],
           "shuffleGroups": [],
           "template": {
             "type": "lab.flow.Sequence",
@@ -610,15 +613,15 @@ this.options.viewportScale = 1
               "": ""
             },
             "parameters": {},
-            "messageHandlers": {},
+            "messageHandlers": {
+              "before:prepare": function anonymous(
+) {
+this.options.viewport = [800, 600]
+this.options.viewportScale = 1
+}
+            },
             "title": "Sequence",
-            "plugins": [
-              {
-                "type": "mousetrap",
-                "mode": "mousetrap",
-                "path": "global.MousetrapPlugin"
-              }
-            ],
+            "plugins": [],
             "content": [
               {
                 "type": "lab.canvas.Screen",
@@ -714,13 +717,7 @@ this.options.viewportScale = 1
                 "parameters": {},
                 "messageHandlers": {},
                 "title": "Mask ",
-                "plugins": [
-                  {
-                    "type": "mousetrap",
-                    "mode": "mousetrap",
-                    "path": "global.MousetrapPlugin"
-                  }
-                ],
+                "plugins": [],
                 "timeout": "200"
               }
             ]
@@ -854,13 +851,7 @@ this.options.viewportScale = 1
 }
           },
           "title": "Practice Trials Instructions ",
-          "plugins": [
-            {
-              "type": "mousetrap",
-              "mode": "mousetrap",
-              "path": "global.MousetrapPlugin"
-            }
-          ]
+          "plugins": []
         },
         {
           "type": "lab.flow.Loop",
@@ -901,13 +892,7 @@ this.options.viewportScale = 1
 }
           },
           "title": "Practice Trials",
-          "plugins": [
-            {
-              "type": "mousetrap",
-              "mode": "mousetrap",
-              "path": "global.MousetrapPlugin"
-            }
-          ],
+          "plugins": [],
           "shuffleGroups": [],
           "template": {
             "type": "lab.flow.Sequence",
@@ -926,13 +911,7 @@ this.options.viewportScale = 1
 }
             },
             "title": "Sequence",
-            "plugins": [
-              {
-                "type": "mousetrap",
-                "mode": "mousetrap",
-                "path": "global.MousetrapPlugin"
-              }
-            ],
+            "plugins": [],
             "content": [
               {
                 "type": "lab.canvas.Screen",
@@ -949,24 +928,6 @@ this.options.viewportScale = 1
                     "fill": "#aaaaaa"
                   },
                   {
-                    "type": "i-text",
-                    "left": 0,
-                    "top": 261.92,
-                    "angle": 0,
-                    "width": 52.14,
-                    "height": 18.08,
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#ffffff",
-                    "text": "START",
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "fontSize": "16",
-                    "fontFamily": "sans-serif",
-                    "lineHeight": 1.16,
-                    "textAlign": "center"
-                  },
-                  {
                     "type": "aoi",
                     "left": 0,
                     "top": 260.98,
@@ -977,6 +938,24 @@ this.options.viewportScale = 1
                     "strokeWidth": 1,
                     "fill": "rgba(0, 0, 0, 0.2)",
                     "label": "Start"
+                  },
+                  {
+                    "type": "i-text",
+                    "left": 0,
+                    "top": 261.92,
+                    "angle": 0,
+                    "width": 52.14,
+                    "height": 18.08,
+                    "stroke": "#000000",
+                    "strokeWidth": 0,
+                    "fill": "#000000",
+                    "text": "START",
+                    "fontStyle": "normal",
+                    "fontWeight": "bold",
+                    "fontSize": "16",
+                    "fontFamily": "sans-serif",
+                    "lineHeight": 1.16,
+                    "textAlign": "center"
                   }
                 ],
                 "viewport": [
@@ -996,13 +975,7 @@ this.options.viewportScale = 1
 }
                 },
                 "title": "Start Button",
-                "plugins": [
-                  {
-                    "type": "mousetrap",
-                    "mode": "mousetrap",
-                    "path": "global.MousetrapPlugin"
-                  }
-                ]
+                "plugins": []
               },
               {
                 "type": "lab.canvas.Screen",
@@ -1032,27 +1005,27 @@ this.options.viewportScale = 1
                     "label": ""
                   },
                   {
-                    "type": "rect",
-                    "left": "0",
-                    "top": 0,
-                    "angle": 0,
-                    "width": "151",
-                    "height": "76",
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#aaaaaa"
-                  },
-                  {
                     "type": "aoi",
                     "left": 0,
                     "top": 0,
                     "angle": 0,
-                    "width": 151,
+                    "width": 150,
                     "height": 76,
                     "stroke": null,
                     "strokeWidth": 1,
                     "fill": "rgba(0, 0, 0, 0.2)",
                     "label": "Block"
+                  },
+                  {
+                    "type": "rect",
+                    "left": "0",
+                    "top": 0,
+                    "angle": 0,
+                    "width": "150",
+                    "height": "76",
+                    "stroke": null,
+                    "strokeWidth": 1,
+                    "fill": "#aaaaaa"
                   }
                 ],
                 "viewport": [
@@ -1073,7 +1046,7 @@ this.options.viewportScale = 1
 
 }
                 },
-                "title": "Block",
+                "title": "Block_P",
                 "plugins": [
                   {
                     "type": "mousetrap",
@@ -1086,27 +1059,27 @@ this.options.viewportScale = 1
                 "type": "lab.canvas.Screen",
                 "content": [
                   {
-                    "type": "rect",
-                    "left": "${parameters.Pos}",
-                    "top": 0,
-                    "angle": 0,
-                    "width": 151,
-                    "height": 76,
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#aaaaaa"
-                  },
-                  {
                     "type": "aoi",
                     "left": "${parameters.Pos}",
                     "top": 0,
                     "angle": 0,
-                    "width": 151,
+                    "width": "150",
                     "height": "76",
                     "stroke": null,
                     "strokeWidth": 1,
                     "fill": "rgba(0, 0, 0, 0.2)",
                     "label": "Block_D"
+                  },
+                  {
+                    "type": "rect",
+                    "left": "${parameters.Pos}",
+                    "top": 0,
+                    "angle": 0,
+                    "width": "150",
+                    "height": 76,
+                    "stroke": null,
+                    "strokeWidth": 1,
+                    "fill": "#aaaaaa"
                   }
                 ],
                 "viewport": [
@@ -1125,7 +1098,7 @@ this.options.viewport = [800, 600]
 this.options.viewportScale = 1 
 }
                 },
-                "title": "Displaced Block",
+                "title": "Displaced Block_P",
                 "timeout": "1000",
                 "plugins": [
                   {
@@ -1163,13 +1136,7 @@ this.options.viewportScale = 1
 }
           },
           "title": "Experiment Start",
-          "plugins": [
-            {
-              "type": "mousetrap",
-              "mode": "mousetrap",
-              "path": "global.MousetrapPlugin"
-            }
-          ]
+          "plugins": []
         },
         {
           "type": "lab.flow.Loop",
@@ -1179,14 +1146,6 @@ this.options.viewportScale = 1
               "": ""
             },
             {
-              "Pos": "-150",
-              "": ""
-            },
-            {
-              "Pos": "-150",
-              "": ""
-            },
-            {
               "Pos": "-300",
               "": ""
             },
@@ -1203,79 +1162,7 @@ this.options.viewportScale = 1
               "": ""
             },
             {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
+              "Pos": "150",
               "": ""
             },
             {
@@ -1297,7 +1184,7 @@ this.options.viewportScale = 1
           ],
           "sample": {
             "mode": "draw-shuffle",
-            "n": ""
+            "n": "30"
           },
           "files": {},
           "responses": {
@@ -1314,13 +1201,7 @@ this.options.viewportScale = 1
 }
           },
           "title": "Unbiased Loop",
-          "plugins": [
-            {
-              "type": "mousetrap",
-              "mode": "mousetrap",
-              "path": "global.MousetrapPlugin"
-            }
-          ],
+          "plugins": [],
           "shuffleGroups": [],
           "template": {
             "type": "lab.flow.Sequence",
@@ -1339,13 +1220,7 @@ this.options.viewportScale = 1
 }
             },
             "title": "Sequence",
-            "plugins": [
-              {
-                "type": "mousetrap",
-                "mode": "mousetrap",
-                "path": "global.MousetrapPlugin"
-              }
-            ],
+            "plugins": [],
             "content": [
               {
                 "type": "lab.canvas.Screen",
@@ -1381,8 +1256,8 @@ this.options.viewportScale = 1
                     "width": 52.14,
                     "height": 18.08,
                     "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#ffffff",
+                    "strokeWidth": 0,
+                    "fill": "#000000",
                     "text": "START",
                     "fontStyle": "normal",
                     "fontWeight": "bold",
@@ -1409,43 +1284,14 @@ this.options.viewportScale = 1
 }
                 },
                 "title": "Start Button",
-                "plugins": [
-                  {
-                    "type": "mousetrap",
-                    "mode": "mousetrap",
-                    "path": "global.MousetrapPlugin"
-                  }
-                ]
+                "plugins": []
               },
               {
                 "type": "lab.canvas.Screen",
                 "content": [
                   {
-                    "type": "rect",
-                    "left": "0",
-                    "top": 0,
-                    "angle": 0,
-                    "width": "151",
-                    "height": "76",
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#aaaaaa"
-                  },
-                  {
                     "type": "aoi",
                     "left": 0,
-                    "top": 0,
-                    "angle": 0,
-                    "width": 147.86,
-                    "height": 74.7,
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "rgba(0, 0, 0, 0.2)",
-                    "label": "Block"
-                  },
-                  {
-                    "type": "aoi",
-                    "left": "0",
                     "top": 0,
                     "angle": 0,
                     "width": 151,
@@ -1454,6 +1300,29 @@ this.options.viewportScale = 1
                     "strokeWidth": 1,
                     "fill": "rgba(0, 0, 0, 0.2)",
                     "label": "Block"
+                  },
+                  {
+                    "type": "aoi",
+                    "left": "0",
+                    "top": 0,
+                    "angle": 0,
+                    "width": "150",
+                    "height": 76,
+                    "stroke": null,
+                    "strokeWidth": 1,
+                    "fill": "rgba(0, 0, 0, 0.2)",
+                    "label": "Block"
+                  },
+                  {
+                    "type": "rect",
+                    "left": "0",
+                    "top": 0,
+                    "angle": 0,
+                    "width": "150",
+                    "height": "76",
+                    "stroke": null,
+                    "strokeWidth": 1,
+                    "fill": "#aaaaaa"
                   }
                 ],
                 "viewport": [
@@ -1474,7 +1343,7 @@ this.options.viewportScale = 1
 
 }
                 },
-                "title": "Block",
+                "title": "Block_UB",
                 "plugins": [
                   {
                     "type": "mousetrap",
@@ -1491,7 +1360,7 @@ this.options.viewportScale = 1
                     "left": "${parameters.Pos}",
                     "top": "0",
                     "angle": 0,
-                    "width": "151",
+                    "width": "150",
                     "height": "76",
                     "stroke": null,
                     "strokeWidth": 1,
@@ -1502,7 +1371,7 @@ this.options.viewportScale = 1
                     "left": "${parameters.Pos}",
                     "top": 0,
                     "angle": 0,
-                    "width": 151,
+                    "width": "150",
                     "height": 76,
                     "stroke": null,
                     "strokeWidth": 1,
@@ -1526,7 +1395,7 @@ this.options.viewport = [800, 600]
 this.options.viewportScale = 1 
 }
                 },
-                "title": "Displaced Block",
+                "title": "Displaced Block_UB",
                 "timeout": "1000",
                 "plugins": [
                   {
@@ -1543,6 +1412,30 @@ this.options.viewportScale = 1
           "type": "lab.flow.Loop",
           "templateParameters": [
             {
+              "Pos": "-300",
+              "": ""
+            },
+            {
+              "Pos": "-300",
+              "": ""
+            },
+            {
+              "Pos": "-300",
+              "": ""
+            },
+            {
+              "Pos": "-300",
+              "": ""
+            },
+            {
+              "Pos": "-300",
+              "": ""
+            },
+            {
+              "Pos": "-300",
+              "": ""
+            },
+            {
               "Pos": "-150",
               "": ""
             },
@@ -1552,266 +1445,6 @@ this.options.viewportScale = 1
             },
             {
               "Pos": "-150",
-              "": ""
-            },
-            {
-              "Pos": "-150",
-              "": ""
-            },
-            {
-              "Pos": "-150",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "-300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
-              "": ""
-            },
-            {
-              "Pos": "300",
               "": ""
             },
             {
@@ -1819,13 +1452,17 @@ this.options.viewportScale = 1
               "": ""
             },
             {
-              "Pos": "150",
+              "Pos": "300",
+              "": ""
+            },
+            {
+              "Pos": "300",
               "": ""
             }
           ],
           "sample": {
             "mode": "draw-shuffle",
-            "n": ""
+            "n": "96"
           },
           "files": {},
           "responses": {
@@ -1842,13 +1479,7 @@ this.options.viewportScale = 1
 }
           },
           "title": "Biased Loop",
-          "plugins": [
-            {
-              "type": "mousetrap",
-              "mode": "mousetrap",
-              "path": "global.MousetrapPlugin"
-            }
-          ],
+          "plugins": [],
           "shuffleGroups": [],
           "template": {
             "type": "lab.flow.Sequence",
@@ -1867,13 +1498,7 @@ this.options.viewportScale = 1
 }
             },
             "title": "Sequence",
-            "plugins": [
-              {
-                "type": "mousetrap",
-                "mode": "mousetrap",
-                "path": "global.MousetrapPlugin"
-              }
-            ],
+            "plugins": [],
             "content": [
               {
                 "type": "lab.canvas.Screen",
@@ -1890,15 +1515,27 @@ this.options.viewportScale = 1
                     "fill": "#aaaaaa"
                   },
                   {
+                    "type": "aoi",
+                    "left": 0,
+                    "top": 262.09,
+                    "angle": 0,
+                    "width": 75.5,
+                    "height": 38,
+                    "stroke": null,
+                    "strokeWidth": 1,
+                    "fill": "rgba(0, 0, 0, 0.2)",
+                    "label": "Start"
+                  },
+                  {
                     "type": "i-text",
                     "left": 0,
                     "top": 261.92,
                     "angle": 0,
                     "width": 52.14,
                     "height": 18.08,
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#ffffff",
+                    "stroke": "#000000",
+                    "strokeWidth": 0,
+                    "fill": "#000000",
                     "text": "START",
                     "fontStyle": "normal",
                     "fontWeight": "bold",
@@ -1906,18 +1543,6 @@ this.options.viewportScale = 1
                     "fontFamily": "sans-serif",
                     "lineHeight": 1.16,
                     "textAlign": "center"
-                  },
-                  {
-                    "type": "aoi",
-                    "left": 0,
-                    "top": 262.09,
-                    "angle": 0,
-                    "width": "75.5",
-                    "height": "38",
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "rgba(0, 0, 0, 0.2)",
-                    "label": "Start"
                   }
                 ],
                 "viewport": [
@@ -1937,13 +1562,7 @@ this.options.viewportScale = 1
 }
                 },
                 "title": "Start Button",
-                "plugins": [
-                  {
-                    "type": "mousetrap",
-                    "mode": "mousetrap",
-                    "path": "global.MousetrapPlugin"
-                  }
-                ]
+                "plugins": []
               },
               {
                 "type": "lab.canvas.Screen",
@@ -1953,7 +1572,7 @@ this.options.viewportScale = 1
                     "left": "0",
                     "top": 0,
                     "angle": 0,
-                    "width": "151",
+                    "width": "150",
                     "height": "76",
                     "stroke": null,
                     "strokeWidth": 0,
@@ -1964,7 +1583,7 @@ this.options.viewportScale = 1
                     "left": 0,
                     "top": 0,
                     "angle": 0,
-                    "width": 151,
+                    "width": "150",
                     "height": 76,
                     "stroke": null,
                     "strokeWidth": 1,
@@ -1987,10 +1606,10 @@ this.options.viewportScale = 1
 this.options.viewport = [800, 600]
 this.options.viewportScale = 1 
 
-document.body.style.backgroundColor = 'black'
+
 }
                 },
-                "title": "Block",
+                "title": "Block_B",
                 "plugins": [
                   {
                     "type": "mousetrap",
@@ -2015,27 +1634,27 @@ document.body.style.backgroundColor = 'black'
                     "label": "Block_D"
                   },
                   {
-                    "type": "rect",
-                    "left": "${parameters.Pos}",
-                    "top": 0,
-                    "angle": 0,
-                    "width": 151,
-                    "height": 76,
-                    "stroke": null,
-                    "strokeWidth": 1,
-                    "fill": "#aaaaaa"
-                  },
-                  {
                     "type": "aoi",
                     "left": "${parameters.Pos}",
                     "top": 0,
                     "angle": 0,
-                    "width": 151,
+                    "width": "150",
                     "height": 76,
                     "stroke": null,
                     "strokeWidth": 1,
                     "fill": "rgba(0, 0, 0, 0.2)",
                     "label": "Block_D"
+                  },
+                  {
+                    "type": "rect",
+                    "left": "${parameters.Pos}",
+                    "top": 0,
+                    "angle": 0,
+                    "width": "150",
+                    "height": 76,
+                    "stroke": null,
+                    "strokeWidth": 1,
+                    "fill": "#aaaaaa"
                   }
                 ],
                 "viewport": [
@@ -2054,7 +1673,7 @@ this.options.viewport = [800, 600]
 this.options.viewportScale = 1 
 }
                 },
-                "title": "Displaced Block",
+                "title": "Displaced Block_B",
                 "timeout": "1000",
                 "plugins": [
                   {
@@ -2066,6 +1685,49 @@ this.options.viewportScale = 1
               }
             ]
           }
+        },
+        {
+          "type": "lab.html.Page",
+          "items": [
+            {
+              "type": "text",
+              "title": "Please answer the following question to the best of your knowledge:"
+            },
+            {
+              "required": false,
+              "type": "checkbox",
+              "label": "In which direction did the block move more often during the experiment?",
+              "options": [
+                {
+                  "label": "The block moved to the left more often",
+                  "coding": "1"
+                },
+                {
+                  "label": "The block moved to the right more often",
+                  "coding": "2"
+                },
+                {
+                  "label": "The block moved to the left as often as it moved to the right",
+                  "coding": "3"
+                },
+                {
+                  "label": "I don't know",
+                  "coding": "4"
+                }
+              ],
+              "name": "in-which-direction-did-the-block-move-more-often-during-the-experiment"
+            }
+          ],
+          "scrollTop": true,
+          "submitButtonText": "Continue →",
+          "submitButtonPosition": "right",
+          "files": {},
+          "responses": {
+            "": ""
+          },
+          "parameters": {},
+          "messageHandlers": {},
+          "title": "Direction Check"
         },
         {
           "type": "lab.html.Form",
@@ -2106,7 +1768,7 @@ this.end()
             {
               "required": true,
               "type": "text",
-              "content": "\nCristina Weiner           \nDepartment of Psychology \nUniversity of Manitoba\nweinerc@myumanitoba.ca"
+              "content": "Ryan Langridge (langrirw@myumanitoba.ca)\u003Cbr\u003E\n\nDepartment of Psychology\u003Cbr\u003E\nUniversity of Manitoba\u003Cbr\u003E\n"
             }
           ],
           "scrollTop": true,
