@@ -1201,7 +1201,6 @@ this.options.viewportScale = 1
 }
           },
           "title": "Unbiased Loop",
-          "skip": true,
           "plugins": [],
           "shuffleGroups": [],
           "template": {
@@ -1480,7 +1479,6 @@ this.options.viewportScale = 1
 }
           },
           "title": "Biased Loop",
-          "skip": true,
           "plugins": [],
           "shuffleGroups": [],
           "template": {
